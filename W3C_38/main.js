@@ -1,16 +1,16 @@
-var assessment = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+var intro_balls = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+var final_exam = "";
 
-console.log("balls: " + assessment)
+console.log(intro_balls,  final_exam)
 
-function CheckAssessment(assessment) {
-  if (  (assessment >= 89 && assessment <= 100)  || assessment >= 90 ) {
-    console.log("student gets  'A+'");
-    return true;
-  }
-  else {
-    console.log("no");
-    return false;
-  }
+function CheckAssessment(intro_balls, final_exam) {
+    if ((intro_balls >= 89 && intro_balls <= 100) || (final_exam >= 90)) {
+      console.log("A+")
+      return true;
+    }
+    else {
+      console.log("no")     
+    }
 }
 
-CheckAssessment(assessment);
+CheckAssessment(intro_balls, final_exam);
