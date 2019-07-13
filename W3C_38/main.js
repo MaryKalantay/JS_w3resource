@@ -1,5 +1,5 @@
 var intro_balls = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
-var final_exam = "";
+var final_exam =Math.floor(Math.random() * (100 - 1 + 1)) + 1;
 
 console.log(intro_balls,  final_exam)
 
